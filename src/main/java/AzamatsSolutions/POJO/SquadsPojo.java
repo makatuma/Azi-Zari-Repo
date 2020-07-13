@@ -15,4 +15,5 @@ public class SquadsPojo {
     public void setSquad(List<Map<String, Object>> squad) {
         this.squad = squad;
     }
+
 }

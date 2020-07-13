@@ -16,6 +16,7 @@ public class APITests {
     public void getGoalkeepersTest() throws IOException, URISyntaxException, InterruptedException {
         List<String> expectedDoalkeepersList = Arrays.asList(TestConstants.getGOALKEEPERS());
         List<String> actualGoalkeepers = APITasks.getAllGoalkeepers();
+        System.out.println("--->"+TestConstants.getGOALKEEPERS().length);
         Assert.assertEquals(TestConstants.getGOALKEEPERS().length, actualGoalkeepers.size());
         Assert.assertEquals("Failed to verify goalkeepers from England league", expectedDoalkeepersList, actualGoalkeepers);
         Thread.sleep(500);
